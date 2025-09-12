@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>stumblecups — bolttexturas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <div id="loadingScreen">
+    <div class="loading-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div> 
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="left-block">
+        <div class="controls">
+          <button id="langBtnTop" class="lang-btn" aria-label="Idioma" title="Alternar idioma">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+              <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
+                font-family="Inter, system-ui, -apple-system, 'Noto Sans JP', sans-serif"
+                font-weight="700" font-size="16" fill="currentColor">
+                文
+              </text>
+            </svg>
+            <span class="lang-code">BR</span>
+          </button>
+        </div>
+        <div class="brand">
+          <div class="logo-pill"><span class="logo-dot"></span><span class="brand-text"><strong>bolt</strong>texturas</span></div>
+          <div class="subtitle">O maior das texturas.</div>
+        </div>
+      </div>
+      <nav class="topnav">
+        <a class="nav-item" href="index.html">Início</a>
+        <a class="nav-item" href="reviver.html">Reviver</a>
+        <a class="nav-item" href="stumblecups.html">StumbleCups</a>
+        <a class="nav-item" href="tutoriais.html">Tutoriais</a>
+        <a class="nav-item" href="postagens.html">Postagens</a>
+        <a class="nav-item" href="sobre.html">Sobre mim</a>
+      </nav>
+
+      <div class="hamburger-wrapper">
+        <div id="hamburgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <nav id="mobileNav">
+        <a href="index.html">Início</a>
+        <a href="reviver.html">Reviver</a>
+        <a href="stumblecups.html">StumbleCups</a>
+        <a href="tutoriais.html">Tutoriais</a>
+        <a href="postagens.html">Postagens</a>
+        <a href="sobre.html">Sobre mim</a>
+      </nav>
+      
+    </div>
+  </header>
+
+  <main>
+    <section class="bolt small-bolt">
+      <div class="bolt-inner">
+        <h1 class="site-title" style="font-size:4rem; font-weight:600;">
+          <span style="color:#8a2be2;">Stumble</span><span style="color:#fff;">Cups</span>
+        </h1>        
+        <p class="lead">Texturas do stumblecups nesta página! somos o único parceiro oficial.</p>
+        <a href="#" class="btn-subscribe">Inscreva-se</a>
+      </div>
+    </section>
+
+    <div class="search-wrapper">
+      <input type="text" id="postSearch" class="search-input" placeholder="Pesquisar textura..." />
+      <span class="search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </span>
+    </div>    
+
+    <section class="collection">
+      <div class="heading-section">
+        <h2 class="section-title">STUMBLE CUPS</h2>
+        <div id="postsGrid" class="grid posts-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="particles-wrapper"></div>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> bolttexturas — Todos os direitos</div>
+  </footer>
+
+  <script src="assets/js/api3.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
